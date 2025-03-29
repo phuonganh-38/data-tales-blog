@@ -1,0 +1,96 @@
+@media (min-width: 2560px) {
+  .slogan {
+    font-size: 145px;
+    margin-left: 90px;
+  }
+  .by-author {
+    font-size: 50px;
+    margin-left: 90px;
+    margin-bottom: 25px;
+  }
+  .story-button {
+    margin-left: 90px;
+    margin-bottom: 110px;
+    font-size: 30px;
+  }
+  .banner-content-2 {
+    top: 74%;
+  }
+
+  .logo {
+    height: 120px;
+    padding: 40px 40px;
+  }
+
+  .main-nav-list {
+    font-size: 30px;
+    padding: 0 50px;
+  }
+
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .container-1 {
+    width: 80%;
+  }
+
+  .number {
+    font-size: 120px;
+  }
+  .heading-skills {
+    font-size: 38px;
+  }
+
+  .skill-description {
+    font-size: 23px;
+  }
+
+  .skill-img {
+    margin-top: 20px;
+    width: 500px;
+  }
+
+  .btn-underline,
+  .btn-underline:link,
+  .btn-underline:visited {
+    font-size: 20px;
+  }
+  .browse input,
+  .browse select {
+    font-size: 42px;
+  }
+
+  .wrapper-blog {
+    width: 60%;
+  }
+
+  .blog-card {
+    padding: 35px;
+    height: 400px;
+  }
+
+  .blog-card a {
+    font-size: 26px;
+  }
+
+  .blog-description {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  .grid-container {
+    gap: 35px;
+  }
+
+  .footer {
+    padding: 12rem 0;
+  }
+
+}
+
+@media (max-width: 1360px) {
+  .blog-card {
+    height: 390px;
+  }
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Art of Choosing the Right Graph</title>
+    <link rel="stylesheet" href="blog-1.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <picture>
+        <source srcset="../picture/logo.svg" type="image/svg+xml">
+        <img class="logo" src="picture/logo" alt="logo">
+      </picture>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-link">
+            <a href="#" alt="Data Tools">Data Tools</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="#" alt="Home">Data Visualisation</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="#" alt="Machine Learning">Machine Learning</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-blog">
+        <div class="main-content">
+          <h1 class="title">
+            The Art of choosing the right graph.
+            Telling a story with your data
+          </h1>
+          <div class="post-meta">
+            🌟 by 
+            <a href="https://phuonganhpham.com" class="author">Jolie Pham</a>  
+            | March 25, 2025
+          </div>
+          <div class="img-blog">
+            <img src="../picture/stacked_bar_blog1.png" alt="stacked bar chart"/>
+          </div>
+          <p class="text">
+            I still remember the first time I had to present data in a university
+            class - my professor was there, along with a lot of my classmates. I
+            had a beautifully detailed dataset, a thorough analysis, and what I
+            thought was a well-prepared presentation. But when I put my charts on
+            the screen, I could see the confusion on everyone's face. The number
+            was there, but the story was lost. That was the moment I realized:
+            choosing the right graph isn't just about visualising data - it's
+            about making people understand it.
+          </p>
+          <p class="text">
+            So, how do you transform raw data into
+            <strong style="color: #ba0900">a compelling visual story</strong>?
+          </p>
+          <p class="text">
+            It all starts with choosing the right graph. Let's dive in!
+          </p>
+
+          <!-- SECTION 1 -->
+          <div class="text-subheader">Why choosing the right graphs matters?</div>
+          <p class="text">Data visualisation is not just decoration - it's a crucial tool for communication. 
+            The right graph can highlight patterns, uncover insights, and make complex data digestible. 
+            What if we select the wrong graph? It can mislead, confuse, or obscure important trends.</p>
+
+          <div class="wrapper">
+            <div class="message-grid">
+              <div class="question-box">
+                <p class="text-heading">To make the right choice, ask yourself:</p>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-1" name="bulb"></ion-icon>
+                    <div class="text-emphasize">What is the key message I want to convey?</div>
+                  </li>
+                  
+                  <li class="list-item">
+                    <ion-icon class="list-icon-1" name="bulb"></ion-icon>
+                    <div class="text-emphasize">What is the data am I working with?</div>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon-1" name="bulb"></ion-icon>
+                    <div class="text-emphasize">Who is my audience?</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="text">By answering these questions, you can match your data to the most suitable visualization.</p>
+
+
+          <!-- SECTION 2 -->
+          <div class="text-subheader">Common mistakes in visualisations</div>
+          <div class="container grid grid-3-cols">
+            <div class="mistakes">
+              <ion-icon class="mistake-icon" name="pie-chart-outline"></ion-icon>
+              <p class="mistake-title">Pie chart overload</p>
+              <p class="mistake-text">Using too many slices makes it unreadable. Stick to 5 or fewer categories.</p>
+            </div>
+
+            <div class="mistakes">
+              <ion-icon class="mistake-icon" name="trending-down-outline"></ion-icon>
+              <p class="mistake-title">Ignoring time trends</p>
+              <p class="mistake-text">Bar charts are great for categories, but use a line chart for trends over time.</p>
+            </div>
+
+            <div class="mistakes">
+              <ion-icon class="mistake-icon" name="stats-chart-outline"></ion-icon>
+              <p class="mistake-title">Overcrowded scatter plots</p>
+              <p class="mistake-text">Too many points without clarity can obscure insights—use transparency or clustering.</p>
+            </div>
+
+            <div class="mistakes">
+              <ion-icon class="mistake-icon" name="alert-circle-outline"></ion-icon>
+              <p class="mistake-title">Unlabeled axes</p>
+              <p class="mistake-text">Always label axes and provide context to prevent misinterpretation.</p>
+            </div>
+
+            <div class="mistakes">
+              <ion-icon class="mistake-icon" name="resize"></ion-icon>
+              <p class="mistake-title">Inconsistent scaling</p>
+              <p class="mistake-text">Misleading scales can exaggerate or minimize trends. Be mindful of axis manipulation!</p>
+            </div>
+          </div>
+
+
+          <!-- SECTION 3 -->
+          <div class="text-subheader">Types of data and their best graphs</div>
+
+          <div class="wrapper">
+            <div class="grid-1-2">
+              <div class="text-box-left">
+                <div class="text-heading">Comparisons</div>
+                <div class="graph-use">Use these graphs when you need to compare values across different categories.</div>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Bar chart</div>
+                  </li>
+            
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Stacked bar chart</div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="chart">
+                  <img src="../picture/bar-chart.png"
+                  class="chart-img"/>
+              </div>
+
+
+              <div class="text-box-left">
+                <div class="text-heading">Trends over time</div>
+                <div class="graph-use">When showing trends or patterns over time, focus on time-series graphs.</div>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Line chart</div>
+                  </li>
+            
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Area chart</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="chart">
+                <img src="../picture/line-graph.png"
+                class="chart-img"/>
+              </div>
+
+
+              <div class="text-box-left">
+                <div class="text-heading">Proportions </div>
+                <div class="graph-use">If you want to highlight how a whole is divided into parts, consider these visualizations.</div>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Pie chart</div>
+                  </li>
+
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Doughnut chart</div>
+                  </li>
+            
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Stacked bar chart</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="chart">
+                <img src="../picture/pie.png"
+                class="chart-img"/>
+              </div>
+
+
+              <div class="text-box-left">
+                <div class="text-heading">Relationships between variables</div>
+                <div class="graph-use">If you want to explore relationships between two or more variables, use scatter-based charts.</div>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Scatter plot</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="chart">
+                <img src="../picture/scatter-plot.png"
+                class="chart-img"/>
+              </div>
+
+
+              <div class="text-box-left">
+                <div class="text-heading">Distributions</div>
+                <div class="graph-use">If you want to analyze how data is distributed, use one of these charts.</div>
+                <ul class="list no-margin-top">
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Histogram</div>
+                  </li>
+
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Box plot</div>
+                  </li>
+
+                  <li class="list-item">
+                    <ion-icon class="list-icon-2" name="checkmark-outline"></ion-icon>
+                    <div class="text">Violin plot</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="chart">
+                <img src="../picture/boxplot.png"
+                class="chart-img"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 4 -->
+          <div class="text-subheader">Make your data speak!</div>
+          <p class="text">Choosing the right graph is crucial because it can <strong><i>transform data from numbers to valuable insights</i></strong>. 
+          When selecting a visualisation, always <strong style="color: #ba0900">prioritize clarity, accuracy, and storytelling</strong>.</p>
+          <p class="text">Next time when you are about to create a chart, take a moment to ask:</p>
+          <div class="quote"><i>Is this the best way to communicate my message?</i></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-links-footer">
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="mailto: hello.datatales@gmail.com"
+            ><ion-icon
+              class="social-icon"
+              name="mail-open-outline"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://github.com/phuonganh-38"
+            ><ion-icon
+              class="social-icon"
+              name="logo-github"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://www.linkedin.com/in/phuonganh38/"
+            ><ion-icon
+              class="social-icon"
+              name="logo-linkedin"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://public.tableau.com/app/profile/phuong.anh.pham6362/vizzes"
+            ><ion-icon
+              class="social-icon"
+              name="logo-tableau"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright" style="color: #01205F">
+        Copyright &copy; by DataTales. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

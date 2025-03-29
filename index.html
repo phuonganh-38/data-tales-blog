@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dataTales | Homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="banner-container">
+        <img class="banner" src="picture/banner-2.jpg" alt="Banner" />
+        <div class="banner-content-1">
+          <div class="slogan">Your guide through <br> the evolving world of data</div>
+        </div>
+
+        <div class="banner-content-2">
+          <div class="by-author">A BLOG BY JOLIE PHAM</div>
+          <a href="story.html" class="story-button">STORY</a>
+        </div>
+      </div>
+
+      <div class="header">
+        <picture>
+          <source srcset="picture/logo.svg" type="image/svg+xml">
+          <img class="logo" src="picture/logo" alt="logo">
+        </picture>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link">
+              <a href="#select-topics" data-category="Data Tools">Data Tools</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#select-topics" data-category="Data Visualisation">Data Visualisation</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#select-topics" data-category="Machine Learning">Machine Learning</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="about-container">
+        <div class="wrapper">
+          <div class="title">ABOUT THE AUTHOR</div>
+          <div class="container-1 grid grid-2-cols grid-center-vertical">
+            <!-- 01 -->
+            <div class="skills">
+              <span class="number">01</span>
+              <div class="heading-skills">Data acquisition & Processing</div>
+              <p class="skill-description">
+                Experienced in web scraping using <strong>Selenium, BeautifulSoup</strong>.
+              </p>
+              <p class="skill-description">
+                Built <strong>AutoClean AI</strong>, an AI-powered tool that automates data cleaning, saving hours of manual work.
+              </p>
+              <p class="skill-description">
+                Worked with <strong>large-scale datasets</strong> (up to <strong>800M rows</strong>) using <strong>Databricks, Snowflake, PostgreSQL, DBeaver</strong>.
+              </p>
+            </div>
+
+            <div class="skill-img-box">
+              <img src="picture/skill.png"
+              class="skill-img"
+              alt="skill-1"/>
+            </div>
+
+            <!-- 02 -->
+            <div class="skill-img-box">
+              <img src="picture/AutoClean AI.png"
+              class="skill-img"
+              alt="skill-2"/>
+            </div>
+
+            <div class="skills">
+              <span class="number">02</span>
+              <div class="heading-skills">EDA & Modelling</div>
+              <p class="skill-description">
+                Proficient in <strong>Python (Pandas, NumPy, scikit-learn)</strong> for data wrangling, EDA, and machine learning.
+              </p>
+              <p class="skill-description">
+                Developed multiple projects applying statistical analysis and data science techniques.
+              </p>
+              <div>
+                <a href = "https://github.com/phuonganh-38" target="_blank" class="btn-underline">Learn more &rarr;</a>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="skills">
+              <span class="number">03</span>
+              <div class="heading-skills">Data Visualisation</div>
+              <p class="skill-description">
+                <strong>Tableau Certified Data Analyst</strong>, skilled in <strong>Power BI, Plotly</strong>.
+              </p>
+              <p class="skill-description">
+                Created high-impact dashboards with <strong>thousands of views</strong> on Tableau Public.
+              </p>
+              <p class="skill-description">
+                Passionate about data storytelling and data science, sharing knowledge via <strong>DataTales, my blog on Data Science & Visualization</strong>.
+              </p>
+            </div>
+
+            <div class="skill-img-box">
+              <img src="picture/Tableau Certified Data Analyst certificate.png"
+              class="skill-img"
+              alt="skill-2"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--SELECT TOPICS -->
+      <section id="select-topics" class="blog-container">
+        <div class="wrapper-blog">
+          <header class="title"><strong>BLOG</strong></header>
+          <div class="grid-blog">
+            <nav class="select-topics">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" id="dropdown-toggle">Browse</a>
+                  <ul class="browse-list" id="dropdown-menu">
+                    <li><a href="#" data-category="Data Tools">Data Tools</a></li>
+                    <li><a href="#" data-category="Data Visualisations">Data Visualisation</a></li>
+                    <li><a href="#" data-category="Machine Learning">Machine Learning</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+  
+            <div class="grid-container" id="blog-list"></div>
+          </div> 
+        </div> 
+      </section>
+
+      <script>
+        // Blog list by category
+        const blogs = [
+            { title: "The Art of Choosing the Right Graph. Telling a Story with Your Data", 
+              link: "art-of-choosing-right-graph/index.html", 
+              category: "Data Visualisations", 
+              description: "I still remember the first time I had to present data in a university class - my professor was there, along with a lot of my classmates. I had a beautifully detailed dataset, and what I thought was a well-prepared presentation. But when I put my charts on the screen, I could see the confusion on everyone's face. The number was there, but the story was lost."
+            },
+            { 
+              title: "How AI Cuts Hours of Manual Work?", 
+              link: "how-AI-cuts-hours-of-manual-work/index.html", 
+              category: "Data Tools",
+              description: "Studies find that data analysts spend up to 80% of their time cleaning data before they can even begin analysis. Messy, incomplete, and inconsistent data slow down workflows, introduce errors and often lead to poor model performance. Despite its critical role, data cleaning remains a tedious and repetitive process."
+            },
+            { 
+              title: "How Netflix Uses A/B Testing to Keep You Watching?", 
+              link: "how-netflix-uses-AB-testing-to-make-you-watching/index.html", 
+              category: "Machine Learning",
+              description: "Imagine this - You open Netflix, scroll through your recommendations, and a striking movie thumbnail catches your eye. Without thinking twice, you click on it. But did you know that Netflix has tested multiple versions of that thumbnail before deciding which one to show you?"
+            }
+        ];
+        
+    
+        function renderBlogs(filterCategory = null) {
+          const blogContainer = document.getElementById('blog-list');
+          blogContainer.innerHTML = ""; 
+          const filteredBlogs = filterCategory 
+              ? blogs.filter(blog => blog.category === filterCategory) 
+              : blogs;
+
+          filteredBlogs.forEach(blog => {
+              let blogCard = document.createElement('div');
+              blogCard.classList.add('blog-card');
+              blogCard.innerHTML = `
+                  <a href="${blog.link}" class="blog-title">${blog.title}</a>
+                  <p class="blog-description">${blog.description}</p>
+              `;
+              blogContainer.appendChild(blogCard);
+          });
+        }
+
+    
+        // Default: show all blogs
+        renderBlogs();
+    
+        // Update event listeners for topic selection
+        document.querySelectorAll('.browse-list a').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const category = this.getAttribute('data-category');
+                renderBlogs(category);
+            });
+        });
+    </script>
+      
+    </main>
+
+    <footer>
+      <ul class="social-links-footer">
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="mailto: hello.datatales@gmail.com"
+            ><ion-icon
+              class="social-icon"
+              name="mail-open-outline"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://github.com/phuonganh-38"
+            ><ion-icon
+              class="social-icon"
+              name="logo-github"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://www.linkedin.com/in/phuonganh38/"
+            ><ion-icon
+              class="social-icon"
+              name="logo-linkedin"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://public.tableau.com/app/profile/phuong.anh.pham6362/vizzes"
+            ><ion-icon
+              class="social-icon"
+              name="logo-tableau"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright" style="color: #01205F">
+        Copyright &copy; by DataTales. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
