@@ -1,251 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How Netflix uses A/B Testing to keep you watching?</title>
-  <link rel="stylesheet" href="blog-3.css" />
-  <style>
-    a {text-decoration: none;}
-  </style>
-  
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-  ></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Netflix uses A/B Testing to keep you watching?</title>
+    <link rel="stylesheet" href="blog-3.css" />
+    <style>
+      a {text-decoration: none;}
+    </style>
+    
+    <script src="../script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script
-    nomodule=""
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-  ></script>
-</head>
-<body>>
-  <header class="header">
-    <picture>
-      <source srcset="../picture/logo.svg" type="image/svg+xml">
-      <img class="logo" src="picture/logo" alt="logo">
-    </picture>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-link">
-          <a href="#" alt="Data Tools">Data Tools</a>
-        </li>
-        <li class="main-nav-link">
-          <a href="#" alt="Home">Data Visualisation</a>
-        </li>
-        <li class="main-nav-link">
-          <a href="#" alt="Machine Learning">Machine Learning</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <main>
-    <div class="container-blog">
-      <div class="main-content">
-        <h1 class="title">How Netflix uses A/B Testing to keep you watching?</h1>
-        <div class="post-meta">
-          🌟 by 
-          <a href="https://phuonganhpham.com" class="author">Jolie Pham</a>  
-          | March 25, 2025
-        </div>
-        
-        <div class="img-blog">
-          <img src="../picture/netflix_blog3.jpg" alt="netflix"/>
-        </div>
-        <p class="text">
-          Imagine this - You open <strong>Netflix</strong>, scroll through your recommendations, and a striking movie thumbnail catches your eye.
-          Without thinking twice, you click on it. But did you know that <strong>Netflix</strong> has tested multiple versions of that thumbnail before 
-          deciding which one to show you?
-        </p>
-
-
-        <p class="text">A/B testing is a data-driven approach that companies like Netflix, Google, and Amazon use to optimize user experiences. Today, we 
-          will dive into the fundamental princiles of A/B Testing, examine its connection to hypothesis testing, and analyze a real-world case study from 
-          Netflix to illustrate its practical application.
-        </p>
-
-        <!-- SECTION 1 -->
-        <div class="text-subheader">1. What Is A/B Testing?</div>
-        <p class="text">A/B testing is an experiment where two versions of something, like an app feature, a webpage, an ad, etc. are tested against each other 
-          to see which performs better.
-        </p>
-        <ul class="text-list-1">
-          <li><strong>Version A</strong>: The existing version</li>
-          <li><strong>Version B</strong>: The modified version</li>
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  </head>
+  <body>>
+    <header class="header">
+      <a href="https://data-tales.com/">
+        <picture>
+          <source srcset="../picture/logo.svg" type="image/svg+xml">
+          <img class="logo" src="../picture/logo.svg" alt="logo">
+        </picture>
+      </a>
+      
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Data Tools">Data Tools</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Data Visualisation">Data Visualisation</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Machine Learning">Machine Learning</a>
+          </li>
         </ul>
-        <p class="text">Users are randomly split into two groups: one sees <strong>Version A</strong>, while the other sees <strong>Version B</strong>. 
-        Their behavior is then analyzed to determine which version leads to better results.</p>
-        <div class="img-blog">
-          <img src="../picture/AB testing.png" alt="advertisement"/>
-        </div>
+      </nav>
+    </header>
 
-        <!-- SECTION 2 -->
-        <div class="text-subheader">2. A/B testing vs. Hypothesis testing</div>
-        <p class="text"><strong>A/B testing</strong> is built on <strong>Hypothesis testing</strong>. Before running an A/B test, we 
-        define two hypotheses:</p>
-        <ul class="text-list-1">
-          <li><strong>Null Hypothesis (H₀)</strong>: There is no difference between Version A and Version B.</li>
-          <li><strong>Alternative Hypothesis (H₁)</strong>: There is a significant difference between Version A and Version B.</li>
-        </ul>
-
-        <!-- SECTION 3 -->
-        <div class="text-subheader">3. Case study: How Netflix could use A/B testing to optimize engagement?</div>
-        <p class="text">To gain a deeper understanding of A/B testing and how it can optimize user engagement, 
-          let’s analyze a hypothetical case study on how Netflix could experiment with different thumbnails for <strong><i>Harry Potter</i></strong> to maximize viewer interest.</p>
-        
-        <div class="step-grid">
-          <!-- STEP 1 -->
-          <div>
-            <span>STEP 1 - Define the Objectives</span>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="trophy-outline"></ion-icon>
-                <div class="text">Increase <strong>click-through rate (CTR)</strong> on the Harry Potter movie page.</div>
-              </li>
-
-              <li class="list-item">
-                <ion-icon class="list-icon" name="trophy-outline"></ion-icon>
-                <div class="text">Maximize <strong>watch time</strong> by encouraging users to start and continue watching.</div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- STEP 2 -->
-          <div>
-            <span>STEP 2 - Define the Hypothesis</span>
-            <ul class="no-bullet">
-              <li class="text-list-2"><strong>H₀: Null Hypothesis</strong>: Changing the thumbnail does not affect the click-through rate (CTR).</li>
-              <li class="text-list-2"><strong>H₁: Alternative Hypothesis</strong>: A different thumbnail will lead to a higher CTR.</li>
-            </ul>
+    <main>
+      <div class="container-blog">
+        <div class="main-content">
+          <h1 class="title">How Netflix uses A/B Testing to keep you watching?</h1>
+          <div class="post-meta">
+            🌟 by 
+            <a href="https://phuonganhpham.com" class="author">Jolie Pham</a>  
+            | March 25, 2025
           </div>
           
-          <!-- STEP 3 -->
-          <div>
-            <span>STEP 3 - Creating variations</span>
-            <div class="text text-2">Netflix tests three thumbnail designs.</div>
-            <div class="margin-grid">
-              <div class="image-grid grid-2-cols grid-center-vertical">
-                <div class="text"><strong>Version A</strong>: A dramatic close-up of Harry holding his wand, ready for battle.</div>
-                <img src="../picture/harry-potter.png" alt="Version A">
-                <div class="text"><strong>Version B</strong>: A picture of the trio (Harry, Ron, and Hermione) at Hogwarts.</div>
-                <img src="../picture/the-trio.png" alt="Version B">
-                <div class="text"><strong>Version C</strong>: A dark, mysterious portrait of Voldemort, appealing to fans of darker fantasy.</div>
-                <img src="../picture/voldemort.png" alt="Version C">
+          <div class="img-blog">
+            <img src="../picture/netflix_blog3.jpg" alt="netflix"/>
+          </div>
+          <p class="text">
+            Imagine this - You open <strong>Netflix</strong>, scroll through your recommendations, and a striking movie thumbnail catches your eye.
+            Without thinking twice, you click on it. But did you know that <strong>Netflix</strong> has tested multiple versions of that thumbnail before 
+            deciding which one to show you?
+          </p>
+
+
+          <p class="text">A/B testing is a data-driven approach that companies like Netflix, Google, and Amazon use to optimize user experiences. Today, we 
+            will dive into the fundamental princiles of A/B Testing, examine its connection to hypothesis testing, and analyze a real-world case study from 
+            Netflix to illustrate its practical application.
+          </p>
+
+          <!-- SECTION 1 -->
+          <div class="text-subheader">1. What Is A/B Testing?</div>
+          <p class="text">A/B testing is an experiment where two versions of something, like an app feature, a webpage, an ad, etc. are tested against each other 
+            to see which performs better.
+          </p>
+          <ul class="text-list-1">
+            <li><strong>Version A</strong>: The existing version</li>
+            <li><strong>Version B</strong>: The modified version</li>
+          </ul>
+          <p class="text">Users are randomly split into two groups: one sees <strong>Version A</strong>, while the other sees <strong>Version B</strong>. 
+          Their behavior is then analyzed to determine which version leads to better results.</p>
+          <div class="img-blog">
+            <img src="../picture/AB testing.png" alt="advertisement"/>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="text-subheader">2. A/B testing vs. Hypothesis testing</div>
+          <p class="text"><strong>A/B testing</strong> is built on <strong>Hypothesis testing</strong>. Before running an A/B test, we 
+          define two hypotheses:</p>
+          <ul class="text-list-1">
+            <li><strong>Null Hypothesis (H₀)</strong>: There is no difference between Version A and Version B.</li>
+            <li><strong>Alternative Hypothesis (H₁)</strong>: There is a significant difference between Version A and Version B.</li>
+          </ul>
+
+          <!-- SECTION 3 -->
+          <div class="text-subheader">3. Case study: How Netflix could use A/B testing to optimize engagement?</div>
+          <p class="text">To gain a deeper understanding of A/B testing and how it can optimize user engagement, 
+            let’s analyze a hypothetical case study on how Netflix could experiment with different thumbnails for <strong><i>Harry Potter</i></strong> to maximize viewer interest.</p>
+          
+          <div class="step-grid">
+            <!-- STEP 1 -->
+            <div>
+              <span>STEP 1 - Define the Objectives</span>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="trophy-outline"></ion-icon>
+                  <div class="text">Increase <strong>click-through rate (CTR)</strong> on the Harry Potter movie page.</div>
+                </li>
+
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="trophy-outline"></ion-icon>
+                  <div class="text">Maximize <strong>watch time</strong> by encouraging users to start and continue watching.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- STEP 2 -->
+            <div>
+              <span>STEP 2 - Define the Hypothesis</span>
+              <ul class="no-bullet">
+                <li class="text-list-2"><strong>H₀: Null Hypothesis</strong>: Changing the thumbnail does not affect the click-through rate (CTR).</li>
+                <li class="text-list-2"><strong>H₁: Alternative Hypothesis</strong>: A different thumbnail will lead to a higher CTR.</li>
+              </ul>
+            </div>
+            
+            <!-- STEP 3 -->
+            <div>
+              <span>STEP 3 - Creating variations</span>
+              <div class="text text-2">Netflix tests three thumbnail designs.</div>
+              <div class="margin-grid">
+                <div class="image-grid grid-2-cols grid-center-vertical">
+                  <div class="text"><strong>Version A</strong>: A dramatic close-up of Harry holding his wand, ready for battle.</div>
+                  <img src="../picture/harry-potter.png" alt="Version A">
+                  <div class="text"><strong>Version B</strong>: A picture of the trio (Harry, Ron, and Hermione) at Hogwarts.</div>
+                  <img src="../picture/the-trio.png" alt="Version B">
+                  <div class="text"><strong>Version C</strong>: A dark, mysterious portrait of Voldemort, appealing to fans of darker fantasy.</div>
+                  <img src="../picture/voldemort.png" alt="Version C">
+                </div>
               </div>
             </div>
+
+            <!-- STEP 4 -->
+            <div>
+              <span>STEP 4 - Determine sample size & Test duration</span>
+              <p class="text">Before running the test, Netflix has to estimate the number of users required to detect a meaningful difference.</p>
+              <p class="text">Test duration: The experiment must run long enough to capture user behavior.</p>
+              <p class="text">Suppose Netflix runs the test for 3 weeks, ensuring each variation gets at least 100,000 views for statistical confidence.</p>
+            </div>
+
+            <!-- STEP 5 -->
+            <div>
+              <span>STEP 5 - Experimental Deployment</span>
+              <p class="text">Each group of users only see one version, and Netflix would track <strong>which thumbnail leads to more clicks and longer watch times.</strong></p>
+              <ul class="list text-list-2">
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="people-outline"></ion-icon>
+                  <div class="text"><strong>Group 1</strong> → Sees thumbnail A</div>
+                </li>
+
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="people-outline"></ion-icon>
+                  <div class="text"><strong>Group 2</strong> → Sees thumbnail B</div>
+                </li>
+
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="people-outline"></ion-icon>
+                  <div class="text"><strong>Group 3</strong> → Sees thumbnail C</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- STEP 6 -->
+            <div>
+              <span>STEP 6 - Analyse results & Implement the best thumbnail</span>
+              <p class="text">After a few weeks of testing, suppose that the data gained:</p>
+              <ul class="no-bullet">
+                <li class="text"><strong>Version A</strong> → 15% higher CTR.</li>
+                <li class="text"><strong>Version B</strong> → 10% higher CTR.</li>
+                <li class="text"><strong>Version A</strong> → No significant increase.</li>
+              </ul>
+              <p class="text">Based on the campaign result, Netflix could prioritize <strong>Version A</strong> to maximize the click-through rate.</p>
+            </div>
           </div>
-
-          <!-- STEP 4 -->
-          <div>
-            <span>STEP 4 - Determine sample size & Test duration</span>
-            <p class="text">Before running the test, Netflix has to estimate the number of users required to detect a meaningful difference.</p>
-            <p class="text">Test duration: The experiment must run long enough to capture user behavior.</p>
-            <p class="text">Suppose Netflix runs the test for 3 weeks, ensuring each variation gets at least 100,000 views for statistical confidence.</p>
+          <div class="text">A/B testing is more than just comparing two options. For marketing campaigns and website optimizations, this 
+            approach helps may significantly help companies and brands to refine their strategies based on actual user behavior rather than 
+            guesswork.
           </div>
-
-          <!-- STEP 5 -->
-          <div>
-            <span>STEP 5 - Experimental Deployment</span>
-            <p class="text">Each group of users only see one version, and Netflix would track <strong>which thumbnail leads to more clicks and longer watch times.</strong></p>
-            <ul class="list text-list-2">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="people-outline"></ion-icon>
-                <div class="text"><strong>Group 1</strong> → Sees thumbnail A</div>
-              </li>
-
-              <li class="list-item">
-                <ion-icon class="list-icon" name="people-outline"></ion-icon>
-                <div class="text"><strong>Group 2</strong> → Sees thumbnail B</div>
-              </li>
-
-              <li class="list-item">
-                <ion-icon class="list-icon" name="people-outline"></ion-icon>
-                <div class="text"><strong>Group 3</strong> → Sees thumbnail C</div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- STEP 6 -->
-          <div>
-            <span>STEP 6 - Analyse results & Implement the best thumbnail</span>
-            <p class="text">After a few weeks of testing, suppose that the data gained:</p>
-            <ul class="no-bullet">
-              <li class="text"><strong>Version A</strong> → 15% higher CTR.</li>
-              <li class="text"><strong>Version B</strong> → 10% higher CTR.</li>
-              <li class="text"><strong>Version A</strong> → No significant increase.</li>
-            </ul>
-            <p class="text">Based on the campaign result, Netflix could prioritize <strong>Version A</strong> to maximize the click-through rate.</p>
-          </div>
+          <div class="quote"><i>How do you see A/B testing being used in your industry?</i></div>
         </div>
-        <div class="text">A/B testing is more than just comparing two options. For marketing campaigns and website optimizations, this 
-          approach helps may significantly help companies and brands to refine their strategies based on actual user behavior rather than 
-          guesswork.
-        </div>
-        <div class="quote"><i>How do you see A/B testing being used in your industry?</i></div>
+      
+
       </div>
-    
+    </main>
+    <footer class="footer">
 
-    </div>
-  </main>
-  <footer class="footer">
+      <ul class="social-links-footer">
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="mailto: hello.datatales@gmail.com"
+            ><ion-icon
+              class="social-icon"
+              name="mail-open-outline"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://github.com/phuonganh-38"
+            ><ion-icon
+              class="social-icon"
+              name="logo-github"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://www.linkedin.com/in/phuonganh38/"
+            ><ion-icon
+              class="social-icon"
+              name="logo-linkedin"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://public.tableau.com/app/profile/phuong.anh.pham6362/vizzes"
+            ><ion-icon
+              class="social-icon"
+              name="logo-tableau"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+      </ul>
 
-    <ul class="social-links-footer">
-      <li>
-        <a
-          class="social-media"
-          target="_blank"
-          href="mailto: hello.datatales@gmail.com"
-          ><ion-icon
-            class="social-icon"
-            name="mail-open-outline"
-            style="color: #01205F"
-          ></ion-icon
-        ></a>
-      </li>
-      <li>
-        <a
-          class="social-media"
-          target="_blank"
-          href="https://github.com/phuonganh-38"
-          ><ion-icon
-            class="social-icon"
-            name="logo-github"
-            style="color: #01205F"
-          ></ion-icon
-        ></a>
-      </li>
-      <li>
-        <a
-          class="social-media"
-          target="_blank"
-          href="https://www.linkedin.com/in/phuonganh38/"
-          ><ion-icon
-            class="social-icon"
-            name="logo-linkedin"
-            style="color: #01205F"
-          ></ion-icon
-        ></a>
-      </li>
-      <li>
-        <a
-          class="social-media"
-          target="_blank"
-          href="https://public.tableau.com/app/profile/phuong.anh.pham6362/vizzes"
-          ><ion-icon
-            class="social-icon"
-            name="logo-tableau"
-            style="color: #01205F"
-          ></ion-icon
-        ></a>
-      </li>
-    </ul>
-
-    <p class="copyright" style="color: #01205F">
-      Copyright &copy; by DataTales. All rights reserved.
-    </p>
-
-  </footer>
-  
-</body>
+      <p class="copyright" style="color: #01205F">
+        Copyright &copy; by DataTales. All rights reserved.
+      </p>
+    </footer> 
+  </body>
 </html>
