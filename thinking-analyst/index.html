@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thinking like a Data Analyst</title>
+    <link rel="stylesheet" href="blog-4.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+
+    <script src="../script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://data-tales.com/">
+        <picture>
+          <source srcset="../picture/logo.svg" type="image/svg+xml">
+          <img class="logo" src="../picture/logo.svg" alt="logo">
+        </picture>
+      </a>
+      
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Data Tools">Data Tools</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Home">Data Visualisation</a>
+          </li>
+          <li class="main-nav-link">
+            <a href="https://data-tales.com/#select-topics" alt="Machine Learning">Machine Learning</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-blog">
+        <div class="main-content">
+          <h1 class="title">
+            Thinking like a Data Analyst
+          </h1>
+          <div class="post-meta">
+            🌟 by 
+            <a href="https://phuonganhpham.com" class="author">Jolie Pham</a>  
+            | April 2, 2025
+          </div>
+          
+          <div class="img-blog">
+            <img src="../picture/data-analyst-thumbnail.png" alt="data-analyst-thumbnail"/>
+          </div>
+          <div class="text">
+            Let’s say we’ve just received a new dataset. And as expected, it’s messy, overwhelming, and full of numbers that don’t seem to tell a clear story. 
+            As data analysts, our job is not just about crunching numbers, it’s about <i class="emphasize">transform that chaos into valuable insights</i>.
+          </div>
+
+          <p class="text">But how do we make sense of raw data and turn it into something actionable?</p>
+          <p class="text">It’s all start with <strong>mindset</strong>.</p>
+
+          <!-- Think Business First and Know your Audience -->
+          <div class="text-subheader">Think <strong><span style="color: #e67e22">Business</span></strong> First and Know your Audience</div>
+          <div class="container grid grid-2-cols">
+            <div>
+              <div class="text-subheader-2-wrap">
+                <ion-icon class="question-header-icon" name="help-outline"></ion-icon>
+                <div class="text-subheader-2">Why thinking business first is critical?</div>
+              </div>
+    
+              <p class="text think-business-text">Data is not simply just data. Every dataset exists because of a business process, and every insight must tie back to a business decision. 
+                If we don’t take the time to understand the business context, we risk spending hours on analysis that doesn't provide real value.  Worse, we might 
+                misinterpret the data and draw conclusions that lead to poor decisions.</p>
+            </div>
+            <div class="ask-yourself">
+              <div class="text-subheader-2">Ask yourself</div>
+              <div class="questions-wrapper">
+                <div class="ask-box-wrap">
+                  <ion-icon class="question-icon" name="construct-outline"></ion-icon>
+                  <div class="text">What problem is the business trying to solve?</div>
+                </div>
+                <div class="ask-box-wrap">
+                  <ion-icon class="question-icon" name="people-outline"></ion-icon>
+                  <div class="text">Who are the key stakeholders, and what decisions do they need to make?</div>
+                </div>
+                <div class="ask-box-wrap">
+                  <ion-icon class="question-icon" name="trending-up-outline"></ion-icon>
+                  <div class="text">How will the insights drive business strategies?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+
+          <!-- Evaluate the data quality -->
+          <div class="text-subheader">Evaluate the data <strong><span style="color: #e67e22">quality</span></strong></div>
+          <p class="text">Before diving into SQL queries or dashboards, let’s take a step back. 
+            Dataset can be misleading if they contain missing values, duplicates, or inconsistencies.</p>
+          
+            <div class="text-subheader-2">Data Analysts should think about</div>
+          <div class="questions-wrapper">
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Do categorical values follow a consistent format? (e.g., “Male” vs. “M”)</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Do we see impossible numerical values (e.g., negative age)?  We don’t have -5 years old.</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there any missing values?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there any duplicates? If so, do they present true errors or repeated data?</div>
+            </div>
+          </div>
+
+          <!-- Seeing a bigger picture -->
+          <div class="text-subheader">Seeing a bigger <strong><span style="color: #e67e22">picture</span></strong></div>
+          <p class="text">Every dataset has a story, but to understand it, 
+            we need to see how values are spread across different variables. This helps us identify trends and detect anomalies.</p>
+            <div class="text-subheader-2">Data Analysts should think about</div>
+          <div class="questions-wrapper">
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Does the distribution suggest normality or skewness?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there any outliers that need attention? If so, is it data entry errors, or extreme but valid cases?</div>
+            </div>
+          </div>
+
+          <!-- Spotting patterns -->
+          <div class="text-subheader">Spotting <strong><span style="color: #e67e22">patterns</span></strong></div>
+          <div class="text-subheader-2">Data Analysts should think about</div>
+          <div class="questions-wrapper">
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">How does the data change over time?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there any sudden spikes or dips that require investigation?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Can we forecast future trends based on the past patterns?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there recurring seasonal patterns? </div>
+            </div>
+          </div>
+
+
+          <div class="container grid grid-4-cols">
+            <div class="seasonal-event">
+              <ion-icon class="event-icon" name="snow-outline"></ion-icon>
+              <p class="event-title">Peak Holiday Seasons</p>
+              <p class="event-text">Increased travel, hotel bookings, and gift shopping due to summer/winter vacations.</p>
+            </div>
+
+            <div class="seasonal-event">
+              <ion-icon class="event-icon" name="cart-outline"></ion-icon>
+              <p class="event-title">Black Friday</p>
+              <p class="event-text">Massive discounts drive a surge in consumer spending on all items, specifically cosmetics and clothing.</p>
+            </div>
+
+            <div class="seasonal-event">
+              <ion-icon class="event-icon" name="cash-outline"></ion-icon>
+              <p class="event-title">Year-end bonuses</p>
+              <p class="event-text">Employees receive extra income, boosting spending on vacations, luxury goods, fine dining, and investments.</p>
+            </div>
+
+            <div class="seasonal-event">
+              <ion-icon class="event-icon" name="school-outline"></ion-icon>
+              <p class="event-title">Back-to-School Shopping</p>
+              <p class="event-text">Parents and students purchase school supplies, clothing, and electronics in preparation for the new academic year.</p>
+            </div>
+          </div>
+    
+          <div class="text-subheader"><strong><span style="color: #e67e22">Who</span></strong> matters?</div>
+          <p class="text">For dataset containing <strong><i>customer factor</i></strong>, identifying patterns in customer behavior helps businesses tailor their strategies.</p>
+          <div class="text-subheader-2">Data Analysts should think about</div>
+          <div class="questions-wrapper">
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Which <strong>characteristics</strong> define customer groups?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">How do customer behaviors differ across segments? (e.g., frequent buyers vs. One-time purchasers)</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Which customer segments contribute most to company's revenue?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Which customer segments <strong>are likely to</strong> contribute most to profitability <strong>in the future</strong>?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Which customer segments having the highest and lowest <strong><i class="emphasize">Retention Rate</i></strong>? Which factors contribute to the high retention rate?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Are there specific customer segments showing an extremely high <strong><i class="emphasize">Customer Churn Rate</i></strong>? If so, what <span class="underline">underlying factors</span> drive their decision to leave?</div>
+            </div>
+          </div>
+
+          <div class="text-subheader">Hidden insights from <strong><span style="color: #e67e22">missed opportunities</span></strong></div>
+          <p class="text">Not all insights come from what <i class="emphasize">did happen</i>, some of the most valuable ones come from what <i class="emphasize">didn't happen</i>. 
+          Businesses lose money not just when customers make bad purchases, but also when potential customers walk away.</p>
+
+          <div class="text-subheader-2-wrap">
+            <ion-icon class="question-header-icon" name="help-outline"></ion-icon>
+            <div class="text-subheader-2">Why ignoring missing opportunities is wasteful?</div>
+          </div>
+          <p class="text">Imagine a hotel only looks at successful bookings but ignores cancellations. They might see a 70% occupanacy rate and think that 
+            everything is fine. But cancellations accounts for 25%. That's a significant lost revenue opportunities.
+          </p>
+          <p class="text">Another common missed opportunities would be <strong>Shopping Cart Abandonment</strong>. Let's say your marketing team has spent weeks 
+            preparing a big sale campaign. Many people actually add products to their carts. And then...nothing happened. They abandoned their carts and leave 
+            without purchasing.
+          <p>
+          <p class="text">
+            This isn't just an inconvenience - it's wasted effort and of course, lost revenue.
+          </p>
+          <p class="quote">So why did they leave?</p>
+          <p class="text">Too high shipping costs? The checkout process was too complicated?</p>
+          <p class="text">Whether the reasons are, insights from missed opportunities can truly help businesses optimize their operating performance.</p>
+
+          <div class="text-subheader-2">Data Analysts should think about</div>
+          <div class="questions-wrapper">
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">Why do some customers book once but never return?</div>
+            </div>
+            <div class="question-wrap">
+              <ion-icon class="question-icon" name="checkmark-outline"></ion-icon>
+              <div class="text">What are factors leading to their decision to cancel their bookings?</div>
+            </div>
+          </div>
+          
+          <div class="text-subheader">Conclusions</div>
+          <p class="text">A real data analyst never just "analyze data" - we <strong><span style="color: #e67e22">solve business problems</span></strong>. 
+          We start by understanding the dataset, and stakeholders before diving into our data.</p>
+          <p class="quote">A golden rule is to always be curious about the story behind the data!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-links-footer">
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="mailto: hello.datatales@gmail.com"
+            ><ion-icon
+              class="social-icon"
+              name="mail-open-outline"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://github.com/phuonganh-38"
+            ><ion-icon
+              class="social-icon"
+              name="logo-github"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://www.linkedin.com/in/phuonganh38/"
+            ><ion-icon
+              class="social-icon"
+              name="logo-linkedin"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media"
+            target="_blank"
+            href="https://public.tableau.com/app/profile/phuong.anh.pham6362/vizzes"
+            ><ion-icon
+              class="social-icon"
+              name="logo-tableau"
+              style="color: #01205F"
+            ></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright" style="color: #01205F">
+        Copyright &copy; by DataTales. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
+
